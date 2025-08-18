@@ -45,7 +45,7 @@ html {
 }
 
 .logo {
-  width: 200px;
+  width: 90vw;
   position: absolute;
   top: 23px;
 }
@@ -60,7 +60,7 @@ html {
   }
 
   .logo {
-    width: 150px;
+    width: 70vw;
   }
 }
 
@@ -71,4 +71,7 @@ html {
 .keys{
   width: 633px; 
 }
+.logo{
+
+  width: 70vw;
 }
