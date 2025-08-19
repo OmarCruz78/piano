@@ -1,41 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Piano</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <div id="piano">
-      <h1>Omar Cruz</h1>
-      <div class="keys">
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Responsiva con Lightbox</title>
+  
+  
+   <style>
+    
+    
+  </style>
+</head>
+<body>
+  <h1>Galería de imágenes</h1>
+  <div class="gallery">
+<figure>  
+  
+    <img src="https://i.ibb.co/svdSdBhR/IMG-20250730-104053-7.jpg" alt="IMG-20250730-104053-7" onclick="openLightbox(this)" border="0">
+ </figure>
+    <figure>
+  <img src="https://i.ibb.co/ynzRQBjX/IMG-0319.jpg" alt="IMG-0319"onclick="openLightbox(this)" border="0">
+  </figure>
+  
+  
+  
+ <figure>
+<img src="https://i.ibb.co/xKWzWn0f/IMG-20250701-144825-14.jpg" alt="IMG-20250701-144825-14" border="0"   onclick="openLightbox(this)">
 
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
+</figure>
 
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-      </div>
-    </div>
-  </body>
+<figure>
+<img src="https://i.ibb.co/cS12WdP0/IMG-20250730-111620.jpg" alt="IMG-20250730-111620" border="0" onclick="openLightbox(this)" >
 
+</figure>
+
+
+<figure>
+<img src="https://i.ibb.co/JWhQr1sx/IMG-0362.jpg" alt="IMG-0362" border="0" onclick="openLightbox(this)">
+
+
+</figure>
+
+<figure>
+<img src="https://i.ibb.co/tMvvQmPC/IMG-0296.jpg" alt="IMG-0296" border="0"  onclick="openLightbox(this)"> 
+ </figure>   
+    
+    
+    
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+  </div>
+  
+  
+ <footer>
+ 
+ <p>@2025 Omar Cruz</p>
+ 
+ </footer> 
+  
+  
+
+  <script>
+    function openLightbox(img) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = img.src;
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+</body>
 </html>
-
